@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+/* TODO: 피그마에서 제가 색상팔레트-> css 뽑기 */
+:root {
+  /* Color styles */
+  --gray1: rgba(243, 243, 243, 1);
+  --gray2: rgba(218, 218, 218, 1);
+  --gray3: rgba(181, 181, 181, 1);
+  --gray4: rgba(114, 114, 114, 1);
+  --gray5: rgba(58, 58, 58, 1);
+  --gray6: rgba(35, 35, 35, 1);
+  --black: rgba(0, 0, 0, 1);
+  --white: rgba(255, 255, 255, 1);
+}
+
+/* 공통디자인: 마진/패딩 0 */
+* {
+  margin: 0;
+  padding: 0;
+  /* TODO: width/height 기준: 외곽선 변경 */
+  box-sizing: border-box;
+ 
+}
+/* FIXME : height 제거 */
+#page {
+  width: 90vw;
+  margin: 0 auto;
+}
+/* body: 웹폰트 */
+body {
+  font-family: "Abhaya Libre", serif;
+}
+li {
+  list-style-type: none;
+}
+/* TODO: a 태그:  */
+a {
+  /* TODO: a 태그 밑줄 없애기 */
+  text-decoration: none;
+  /* TODO: 색깔표시 rgba(빨간색,녹색,파란색,투명도) */
+  /* TODO: 빨간색: 0-255 까지 숫자 */
+  /* TODO: 투명도: 0-1 사이 실수 */
+  /* TODO: 색깔에 이름이 붙은 것을 사용(추천)
+        사용법: 속성: var(색깔이름)
+     */
+  color: var(--black);
+}

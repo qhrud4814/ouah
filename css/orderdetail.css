@@ -1,0 +1,67 @@
+#page {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.title p {
+  font-size: 1.5rem;
+}
+.english {
+  font-size: 1.25rem;
+}
+input[type="text"] {
+  background-color:  var(--white);
+  border-top: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+  border-right: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  width: 60vw;
+  margin-bottom: 10px;
+}
+input[type="password"] {
+  background-color:  var(--white);
+  border-top: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+  border-right: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  width: 60vw;
+  margin-bottom: 10px;
+}
+.btn1 {
+  width: 60vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  background-color: var(--black);
+  color:  var(--white);
+}
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  #page {
+    width: 80vw;
+  }
+  .title p {
+    font-size: 2rem;
+  }
+  .english {
+    font-size: 2rem;
+  }
+  input[type="text"] {
+    width: 30vw;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  input[type="password"] {
+    width: 30vw;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .btn1 {
+    width: 30vw;
+    height: 5vh;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}
+/* TODO: 데스크탑 */
+@media screen and (min-width: 1280px) {
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- TODO: 1) Swiper js(캐러셀,이미지 회전) css 넣기-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- TODO : AOS css: https://michalsnik.github.io/aos/ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- TODO : isotope 공홈 : https://isotope.metafizzy.co/ -->
+    <!-- TODO : 공통 css -->
+    <link rel="stylesheet" href="./css/00_style.css" />
+    <!-- TODO : 나의 css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="page">
+      <!-- TODO: fab 이모지 -->
+      <div id="fab">⇮</div>
+      <!-- TODO 머리말  -->
+      <div id="header">
+        <div class="menu">
+          <nav>
+            <div class="gnb">
+              <p>shop</p>
+              <ul id="drop-down">
+                <li><a href="./outer.html">outer</a></li>
+                <br />
+                <li><a href="./knit.html">knit</a></li>
+                <br />
+                <li><a href="./top.html">top</a></li>
+                <br />
+                <li><a href="./bottom.html">bottom</a></li>
+                <br />
+                <li><a href="./skirt.html">skirt</a></li>
+                <br />
+                <li><a href="./ops.html">ops</a></li>
+              </ul>
+            </div>
+            <div id="logo">Ouah</div>
+            <div id="top2">
+              <ul class="point">
+                <li id="search"><a href="#none">search</a></li>
+                <li><a href="./login.html">login</a></li>
+                <li><a href="./cart.html">cart</a></li>
+              </ul>
+              <div id="input-search" class="clear">
+                <div class="input-search-content">
+                  <div id="button">
+                    <input type="text" />
+                    <a href="./search.html"><button id="btn1">seach</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- TODO : 배너 -->
+      <div class="swiper mySwiper clear">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- TODO: 1번째 배경이미지 -->
+            <div class="main"></div>
+          </div>
+          <div class="swiper-slide">
+            <!-- TODO: 2번째 배경이미지 -->
+            <div class="sub-main"></div>
+          </div>
+        </div>
+      </div>
+      <div class="body-content clear">
+        <!-- TODO : 본문1 -->
+        <div class="content-box">
+          <div class="content">
+            <p>cllection</p>
+          </div>
+        </div>
+        <!-- TODO : AOS -->
+        <!-- FIXME : 본문 box-container, box, section-box, section 수정/추가, 아래 별명 모두 통일함 -->
+        <div class="box-container clear">
+          <div class="text-box" data-aos="fade-right">
+            <div class="best">
+              <p>Journal</p>
+              <p>2025</p>
+              <p>best</p>
+              <p>autumn</p>
+            </div>
+          </div>
+          <!-- FIXME : 본문 section-box 추가 -->
+          <div class="section-box">
+            <div class="section">
+              <a href="#none"><img src="./img/section1.png" alt="치마" /></a>
+            </div>
+            <div class="section">
+              <a href="#none"><img src="./img/section2.png" alt="니트" /></a>
+            </div>
+          </div>
+          <div class="section-box">
+            <div class="section">
+              <a href="#none"><img src="./img/section3.png" alt="니트" /></a>
+            </div>
+            <div class="section">
+              <a href="#none"><img src="./img/section4.png" alt="청바지" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="text-box" data-aos="fade-right">
+            <div class="new">
+              <p>Journal</p>
+              <p>2025</p>
+              <p>new</p>
+              <p>autumn</p>
+            </div>
+          </div>
+          <div class="section-box">
+            <div class="section">
+              <a href="#none"><img src="./img/section5.png" alt="청바지" /></a>
+            </div>
+            <div class="section">
+              <a href="#none"><img src="./img/section6.png" alt="스커트"/></a>
+            </div>
+          </div>
+          <div class="section-box">
+            <div class="section">
+              <a href="#none"><img src="./img/section7.png" alt="스커트" /></a>
+            </div>
+            <div class="section">
+              <a href="#none"><img src="./img/section8.png" alt="가디건"/></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FIXME : 본문 today-best, today 수정/추가, 아래 별명 모두 통일함 -->
+        <div class="today-best clear">
+          <div class="best-product">
+            <p>today best</p>
+          </div>
+        </div>
+        <div class="today-box">
+          <div class="today">
+            <img src="./img/today1.png" alt="가디건" />
+            <a href="#none"><p>alpaca Cardigan_yellow beige</p></a>
+            <p class="soldout">sold out</p>
+          </div>
+          <div class="today">
+            <img src="./img/today2.png" alt="가디건" />
+            <a href="#none"><p>hand-made Cardigan _brown</p></a>
+            <p>krw 149,000</p>
+          </div>
+          <div class="today">
+            <img src="./img/today3.png" alt="자켓" />
+            <a href="#none"><p>classic single jacket_light brown</p></a>
+            <p>krw 289,000</p>
+          </div>
+          <div class="today">
+            <img src="./img/today4.png" alt="자켓" />
+            <a href="#none"><p>suede rider jacket_ beige</p></a>
+            <p>krw 259,000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer 밑으로 내려오기 -->
+      <!-- TODO : 꼬리말 -->
+      <footer class="clear">
+        <!-- TODO: 주소 -->
+        <div id="address">
+          <p>
+            <br /><a href="./customerservice.html">customer service</a><br /><a
+              href="./delivery.html"
+              >delivery</a
+            ><br /><a href="./aexchange.html">aexchange & retutn</a> <br /><a
+              href="./membership.html"
+              >membership</a
+            >
+            <br /><a href="#none">agreement</a><br /><a href="#none"
+              >privacy policy.</a
+            ><br /><a href="./orderdetail.html">order detail</a> <br /><a
+              href="instagram&kakaotal.html"
+              >instagram & kakaotal</a
+            >
+          </p>
+        </div>
+        <!-- TODO: 전화번호 -->
+        <div id="customer">
+          <p>
+            <br />company : Ouah <br />address : 687-1, Jungang-daero, jin-
+            <br />gu, Busan <br />registration no : 000-00-00000
+            <br />e-mail_qkrqhrud147@naver.com <br />customer services :
+            051-000-0000 <br />Photo source : Pinterest <br />owner_su-a park
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- jQuery CDN js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#search").click(function () {
+          if ($("#input-search").css("display") === "none") {
+            $("#input-search").slideDown();
+          } else {
+            $("#input-search").slideUp();
+          }
+        });
+      });
+    </script>
+
+    <!-- jQuery CDN js -->
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- TODO:  Swiper JS: 공식사이트) https://swiperjs.com/demos -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- TODO : AOS js: https://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- TODO: isotope cdn(인터넷주소) -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- TODO : 나의 js 끼워넣기, script 태그 -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+#page {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.title p {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.english {
+  font-size: 1.25rem;
+  margin-left: 20px;
+}
+.korea {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+img {
+  text-align: center;
+}
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  .title p {
+    font-size: 2rem;
+  }
+  .english {
+    font-size: 1.5rem;
+  }
+  .korea {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1rem;
+  }
+}
+/* TODO: 데스크탑 */
+@media screen and (min-width: 1280px) {
+  .english {
+    font-size: 1.5rem;
+  }
+  .korea {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1rem;
+  }
+}

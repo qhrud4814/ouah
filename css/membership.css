@@ -1,0 +1,38 @@
+#page {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.title p {
+  font-size: 1.5rem;
+}
+.korea {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.8rem;
+}
+img {
+  margin-bottom: 20px;
+}
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  .title p {
+    font-size: 2rem;
+  }
+  .korea {
+    font-size: 1rem;
+  }
+  img {
+    margin-bottom: 20px;
+    width: 50vw;
+  }
+}
+/* TODO: 데스크탑 */
+@media screen and (min-width: 1280px) {
+  .korea {
+    font-size: 1rem;
+  }
+  img {
+    margin-bottom: 20px;
+    width: 35vw;
+  }
+}

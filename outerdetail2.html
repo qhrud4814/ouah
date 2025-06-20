@@ -1,0 +1,132 @@
+<!-- TODO detail1.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/00_style.css" />
+
+    <link rel="stylesheet" href="./css/00_common.css" />
+
+    <link rel="stylesheet" href="./css/outerdetail2.css" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="fab"><img src="./img/arrow.png" alt="위로" /></div>
+      <div class="back">
+        <a href="./outer.html"><img src="./img/back.png" alt="뒤" /></a>
+      </div>
+      <div class="search">
+        <a href="./search.html"><img src="./img/search.png" alt="돋보기" /></a>
+      </div>
+
+      <img class="heart" src="./img/heart.png" alt="하트" width="30px" />
+
+      <!-- TODO 스와이퍼 : 왼쪽(수정)-->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- TODO : 1번 이미지(img) -->
+            <img  class="knit"  src="./img/outer2.jpg" alt="아우터1" />
+          </div>
+          <div class="swiper-slide">
+            <!-- TODO : 2번 이미지(img) -->
+            <img class="knit2"  src="./img/outer2(same)2.png" alt="아우터2" />
+          </div>
+          <div class="swiper-slide">
+            <!-- TODO : 3번 이미지(img) -->
+            <img class="knit3"  src="./img/outer2(same)3.png" alt="아우터3" />
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+        <!-- TODO : 여기 페이지기호 넣기 : 자동으로 그려줌 -->
+      </div>
+
+      <!-- TODO 오른쪽 -->
+      <div class="infor">
+        <div class="share">
+          <img src="./img/share.png" alt="공유" />
+        </div>
+        <p class="name">[exclusive]Overfit jacket _ black</p>
+        <div class="bag">
+          <img src="./img/bag.png" alt="장바구니" />
+        </div>
+        <p class="soldout">sold out</p>
+        <div class="color"></div>
+        <div class="color2"></div>
+        <div class="color3"></div>
+
+        <br />
+        <div class="onlypc">
+          <button class="size">44</button><button class="size">55</button>
+          <br />
+          <br />
+          <br />
+          <br />
+          <button>&nbsp;-&nbsp;</button>
+          <input type="text" value="1" />
+          <button>&nbsp;+&nbsp;</button>
+          <br />
+          <br />
+          <button class="get">장바구니</button
+          ><button class="get">바로구매</button>
+        </div>
+      </div>
+
+      <!-- TODO 밑에 -->
+      <div class="detail-box clear">
+        <!-- TODO 상세정보 -->
+        <div id="info">
+          <!-- TODO 피그마 작업 -->
+          <img src="./img/outer detail2.png" alt="상세정보" />
+        </div>
+        <!-- TODO qna -->
+        <div id="qna">
+          <h5>Q&A</h5>
+          <div class="div1">재입고 요청이요.</div>
+          <div class="div2">
+            dgf**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2025.02.21
+          </div>
+          <br />
+          <div class="div1">재입고는 언제 되나요?</div>
+          <div class="div2">
+            dghh**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2025.02.22
+          </div>
+          <div class="write">
+            <img src="./img/write.png" alt="글쓰기" />
+          </div>
+          <br />
+          <br />
+          <div class="line"></div>
+          <p>배송/교환/반품 안내</p>
+          <div class="line"></div>
+          <p>판매자 정보</p>
+          <div class="line"></div>
+          <p>결제 정보</p>
+          <div class="line"></div>
+        </div>
+      </div>
+      <br />
+
+      <div id="end">
+        <div id="address-detail">
+          <p>고객센터 | 02-7733-2537</p>
+          <p>운영시간: 평일 09:00~18:00 (점심시간 12:00~13:00)</p>
+          <button>FAQ</button>
+          <button>1:1문의</button>
+          <p>회사소개 | 공지사항 | 이용약관 | 개인정보처리방침</p>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- TODO : 나의 js -->
+    <script src="./js/outerdetail2.js"></script>
+  </body>
+</html>

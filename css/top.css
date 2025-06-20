@@ -1,0 +1,62 @@
+/* TODO : #fab 이모지 */
+#fab {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 90vh;
+  right: -30px;
+  z-index: 99999;
+}
+/* FIXME : today-best 부분 */
+.best-product p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.today-box {
+  display: block;
+  justify-items: center;
+  align-items: center;
+}
+.today {
+  float: left;
+  width: 46%;
+  font-size: 0.5rem;
+  border: 2px solid white;
+  margin: 0 0 5px 8px;
+}
+.today p {
+  margin-top: 5px;
+}
+.today > img {
+  width: 100%;
+  height: auto;
+}
+.soldout {
+  color: var(--gray3);
+}
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  .best-product p {
+    font-size: 3.5rem;
+  }
+  .today-box {
+    margin-left: 50px;
+  }
+  .today p {
+    font-size: 1rem;
+  }
+}
+/* TODO: 데스크탑 */
+@media screen and (min-width: 1280px) {
+  .best-product p {
+    font-size: 4rem;
+  }
+  .today {
+    margin-left: 30px;
+  }
+  .today p {
+    font-size: 1.5rem;
+  }
+}

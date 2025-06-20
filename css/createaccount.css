@@ -1,0 +1,272 @@
+/* TODO 머리말 */
+#nav {
+  width: 100%;
+}
+.gnb {
+  float: left;
+  width: 33%;
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+#logo {
+  float: left;
+  width: 33%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "MonteCarlo", serif;
+}
+#top2 {
+  float: left;
+  width: 33%;
+  text-align: right;
+  margin-top: 30px;
+  font-size: 0.7rem;
+}
+/* TODO positon 추가,background-color */
+#drop-down {
+  border: 1px solid var(--gray3);
+  width: auto;
+  padding: 20px;
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+  z-index: 99999;
+}
+#drop-down h3 {
+  font-weight: 100;
+}
+#drop-down a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+#drop-down a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+#drop-down a {
+  display: block;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: var(--gray3);
+  color: var(--white);
+}
+#drop-down > ul > li:hover #drop-down {
+  display: block;
+}
+#drop-down > ul > li:hover > a {
+  background-color: var(--black);
+}
+#drop-down a:hover {
+  background-color: var(--gray3);
+}
+
+/* TODO : 본문 */
+.login {
+  text-align: center;
+  width: 90vw;
+}
+#account {
+  float: left;
+  width: 90vw;
+  text-align: center;
+  margin: 0 20px 20px 0;
+  font-size: 1.25rem;
+}
+.createaccount {
+  color: var(--gray3);
+}
+.username {
+  float: left;
+  margin-left: 20px;
+  font-size: 1.25rem;
+  clear: both;
+}
+.id {
+  float: right;
+  margin-right: 25px;
+  font-size: 0.5rem;
+  color: var(--gray3);
+  font-family: "Noto Sans KR", sans-serif;
+}
+.password {
+  float: right;
+  margin-right: 20px;
+  font-size: 1.25rem;
+  color: var(--gray3);
+}
+input[type="text"] {
+  background-color: var(--white);
+  border-top: 1px solid var(--white);
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  border-bottom: 1px solid var(--black);
+  width: 80vw;
+}
+.input {
+  clear: both;
+}
+input[type="password"] {
+  background-color: var(--white);
+  border-top: 1px solid var(--white);
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  border-bottom: 1px solid var(--black);
+  width: 80vw;
+  margin-bottom: 10px;
+}
+input[type="password"]:focus {
+  outline: none;
+}
+.contact {
+  text-align: center;
+  margin: 5px 50px 0 0;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="phone"] {
+  background-color: var(--white);
+  border-top: 1px solid var(--white);
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  border-bottom: 1px solid var(--black);
+  width: 10vw;
+}
+input[type="phone"]:focus {
+  outline: none;
+}
+.agree {
+  font-family: "Noto Sans KR", sans-serif;
+  float: left;
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+.agree-in {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.8rem;
+  float: right;
+  margin-right: 20px;
+}
+input[type="checkbox"] {
+  /* TODO: 기본 스타일 제거: 화면에서 없어짐 */
+  appearance: none;
+  /* TODO: 나만의 라디오 디자인 */
+  border: 2px solid var(--gray3);
+  width: 1.25rem;
+  height: 1.25rem;
+  /* TODO: 둥근사각형: 50%(원) */
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-top: -1px;
+}
+/* TODO: checked : 클릭 시 색깔나오기 */
+input[type="checkbox"]:checked {
+  border: 4px solid var(--black);
+}
+hr {
+  background-color: var(--black);
+  height: 1px;
+  width: 80vw;
+  border: 0;
+  margin: 1rem 0;
+  margin-left: 20px;
+}
+#btn1 {
+  width: 80vw;
+  height: 5vh;
+  margin-bottom: 10px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* TODO: 꼬리말(footer) */
+footer {
+  height: 10rem;
+  background-color:  var(--white);
+  color:  var(--black);
+  font-style: italic;
+  font-size: 12px;
+}
+#address {
+  font-size: 10px;
+  float: left;
+  height: 100%;
+}
+#customer {
+  text-align: right;
+  font-size: 10px;
+  float: right;
+  height: 100%;
+}
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+  /* TODO : 머리말 */
+  .gnb {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+  #logo {
+    font-size: 3rem;
+  }
+  #top2 {
+    font-size: 1.6rem;
+    margin-top: 40px;
+  }
+  /* TODO : 본문 */
+  .login {
+    width: 85vw;
+  }
+  /* TODO : 꼬리말 */
+  #address {
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  #customer {
+    font-size: 1rem;
+    margin-right: 20px;
+  }
+}
+
+/* TODO: 데스크탑 */
+@media screen and (min-width: 1280px) {
+ 
+  .gnb {
+    font-size: 2.5rem;
+  }
+  #logo {
+    font-size: 3.5rem;
+  }
+  #top2 {
+    font-size: 2.5rem;
+  }
+  /* TODO : 본문 */
+  .login {
+    width: 80vw;
+    margin-left: 80px;
+  }
+  #account {
+    width: 78vw;
+  }
+  hr {
+    margin-left: 0;
+  }
+  .agree {
+    margin-left: 0;
+  }
+  .agree-in {
+   
+    margin-right: 0;
+  }
+  /* TODO : 꼬리말 */
+  #address {
+    font-size: 2rem;
+  }
+  #customer {
+    font-size: 2rem;
+  }
+}
